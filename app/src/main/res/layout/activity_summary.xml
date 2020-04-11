@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.question.SummaryActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvName"
+        android:layout_marginTop="?actionBarSize"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:text="Hello"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelOne"
+        android:layout_marginTop="?actionBarSize"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:text="Here are the answers selected:"
+        android:layout_below="@id/tvName"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/questionOne"
+        android:layout_marginTop="?actionBarSize"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:text="@string/question_1"
+        android:layout_below="@id/labelOne"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAnswerOne"
+        android:layout_marginTop="5dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:text="Here are the answers selected:"
+        android:layout_below="@id/questionOne"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/questionTwo"
+        android:layout_marginTop="?actionBarSize"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:text="@string/question_1"
+        android:layout_below="@id/tvAnswerOne"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAnswerTwo"
+        android:layout_marginTop="5dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:text="Here are the answers selected:"
+        android:layout_below="@id/questionTwo"
+        android:layout_marginLeft="16dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Finish"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        app:cornerRadius="30dp"
+        android:textAllCaps="false"
+        android:layout_above="@id/btnHistory"
+        android:id="@+id/btFinish" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        app:cornerRadius="30dp"
+        android:textAllCaps="false"
+        android:id="@+id/btnHistory" />
+
+
+</RelativeLayout>

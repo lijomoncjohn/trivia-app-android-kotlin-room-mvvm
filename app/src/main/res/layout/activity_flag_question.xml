@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.question.FlagQuestionActivity">
+
+    <TextView
+        android:id="@+id/labelQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 2"
+        android:layout_marginTop="?actionBarSize"
+        android:layout_marginLeft="16dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_2"
+        android:layout_below="@id/labelQ"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1" />
+    <LinearLayout
+        android:id="@+id/layoutQ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:layout_centerInParent="true">
+            <CheckBox
+                android:id="@+id/cbOptionOne"
+                android:background="@drawable/checkbox_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/question_2_choice_1"/>
+            <CheckBox
+                android:id="@+id/cbOptionTwo"
+                android:background="@drawable/checkbox_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/question_2_choice_2"/>
+            <CheckBox
+                android:id="@+id/cbOptionThree"
+                android:background="@drawable/checkbox_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/question_2_choice_3"/>
+            <CheckBox
+                android:id="@+id/cbOptionFour"
+                android:background="@drawable/checkbox_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/question_2_choice_4"/>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_next"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        app:cornerRadius="30dp"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:id="@+id/btnNextTwo" />
+
+</RelativeLayout>
